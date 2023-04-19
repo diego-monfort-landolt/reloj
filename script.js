@@ -14,7 +14,7 @@ function getCurrentTime() {
     hours   = currentDate.getHours(),
     minutes = formatTime(currentDate.getMinutes()),
     seconds = formatTime(currentDate.getSeconds())
-    format = (hours > 12) || (hours == 24) ? `AM` : 'PM',
+    format = (hours < 12) || (hours == 24) ? `AM` : 'PM',
     formatHours = (hours + 11) % 12 + 1
     time.innerHTML = `${hours}:${minutes}:${seconds}
     <small>${format}</small>`

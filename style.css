@@ -16,6 +16,18 @@ body {
     justify-content: center;
     background: linear-gradient(to right, #c21500, #ffc500);
 }
+.one {
+    background-color: rgba(11, 4, 222, 0.441);
+    padding: 2rem;
+    border-radius: 7rem;
+    box-shadow: 0 2rem 2rem;
+    border: none;
+
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    animation: myAnim 2s ease-in-out 0s infinite normal forwards;
+}
 section {
     font-family: monospace, sans-serif;
     color: #000;
@@ -32,9 +44,24 @@ section {
     font-size: 4rem;
     letter-spacing: 1.5rem;
     font-weight: bold;
+   
 
 }
 small {
     font-size: 4rem;
     letter-spacing: 0.5rem;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
